@@ -37,7 +37,6 @@ function cleanup() {
 
 cleanup ${PROJECTNAME}
 
-## load artifactory project
 echo
 echo ">>> start docker container $PROJECTNAME..."
 echo
@@ -51,12 +50,10 @@ echo
 echo "--- stopped: docker container $PROJECTNAME ---"
 echo
 
-## stop postgres
 echo
 echo ">>> Cleanup..."
 echo
 cleanup ${PROJECTNAME}
-cleanup postgres -f
 echo
 echo "--- Cleanup done. --"
 echo
