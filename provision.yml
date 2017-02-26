@@ -1,0 +1,8 @@
+#!/usr/bin/env ansible-playbook
+---
+- name: setup artifactory
+  hosts: all
+  become: yes
+
+  roles:
+    - gitlab-playbook
